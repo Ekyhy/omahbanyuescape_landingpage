@@ -1,0 +1,260 @@
+@import url('./kelas.css');
+@import url('./facilities.css');
+@import url('./footer.css');
+@import url('./hubungi.css');
+@import url('https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@400;700&display=swap');
+
+body {
+  font-family: 'Shippori Mincho', serif;
+}
+
+.shippori-mincho-regular {
+  font-family: 'Shippori Mincho', serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* Navbar styles: transparent by default, solid when scrolled */
+.navbar-custom {
+  transition: background-color 240ms ease, box-shadow 240ms ease, padding 240ms ease;
+}
+
+.navbar-transparent {
+  background-color: transparent;
+}
+
+.navbar-scrolled {
+  background-color: rgba(255,255,255,0.96);
+  box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+}
+
+/* Ensure content doesn't hide under fixed navbar when scrolled */
+body.has-fixed-navbar {
+  padding-top: 70px; /* adjust if navbar height differs */
+}
+
+@media (max-width: 991.98px) {
+  .navbar-scrolled {
+    background-color: rgba(255,255,255,0.98);
+  }
+  
+}
+
+/* Banner with background image */
+.hero-banner {
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), 
+              url('/src/assets/img/gamabar2.jpeg') center/cover no-repeat;
+  background-attachment: fixed;
+  position: relative;
+}
+
+.hero-content {
+  animation: fadeInUp 0.8s ease-out;
+}
+
+.hero-title {
+  font-size: 4rem;
+  font-weight: 700;
+  margin-bottom: 15px;
+  font-family: 'Shippori Mincho', serif;
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
+}
+
+.hero-subtitle {
+  font-size: 1.5rem;
+  font-weight: 300;
+  margin-bottom: 30px;
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.5);
+  letter-spacing: 1px;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (max-width: 768px) {
+  .hero-banner {
+    background-attachment: scroll;
+  }
+  
+  .hero-title {
+    font-size: 2.5rem;
+  }
+  
+  .hero-subtitle {
+    font-size: 1.1rem;
+  }
+}
+/* Product Introduction Section */
+.product-intro {
+  background-color: #f8f9fa;
+}
+
+.product-content {
+  padding: 20px;
+}
+
+.product-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #2c3e50;
+  margin-bottom: 10px;
+  font-family: 'Shippori Mincho', serif;
+}
+
+.product-subtitle {
+  font-size: 1.3rem;
+  color: #7f8c8d;
+  margin-bottom: 20px;
+  font-weight: 500;
+}
+
+.product-description {
+  font-size: 1rem;
+  line-height: 1.8;
+  color: #555;
+  margin-bottom: 20px;
+}
+
+.product-image {
+  text-align: center;
+}
+
+.product-image img {
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+  transition: transform 300ms ease, box-shadow 300ms ease;
+}
+
+.product-image img:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 50px rgba(0, 0, 0, 0.15);
+}
+
+@media (max-width: 768px) {
+  .product-title {
+    font-size: 2rem;
+  }
+  
+  .product-subtitle {
+    font-size: 1.1rem;
+  }
+  
+  .product-description {
+    font-size: 0.95rem;
+  }
+}
+
+/* ProdukKami Section Styles */
+.produk-header {
+  background: linear-gradient(135deg, #ffffff 0%, #f2f2f2 100%);
+  color: #222;
+  text-align: center;
+  padding: 80px 20px !important;
+}
+
+.produk-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 20px;
+  font-family: 'Shippori Mincho', serif;
+}
+
+.produk-subtitle {
+  font-size: 1.1rem;
+  font-weight: 300;
+  max-width: 800px;
+  margin: 0 auto;
+  line-height: 1.8;
+  color: #555;
+}
+
+.benefits-section {
+  background-color: #ffffff;
+  padding: 60px 20px !important;
+}
+
+.section-title {
+  .benefits-section {
+    background-color: #ffffff;
+    padding: 60px 20px !important;
+  }
+
+  .section-title {
+    font-size: 2.2rem;
+    font-weight: 700;
+    justify-content: center;
+    color: #222;
+    margin-bottom: 40px;
+    font-family: 'Shippori Mincho', serif;
+  }
+
+  .benefit-card {
+    background: linear-gradient(135deg, #ffffff 0%, #f4f4f4 100%);
+    border-radius: 15px;
+    padding: 30px;
+    text-align: center;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.06);
+    transition: all 300ms ease;
+    border: none;
+  }
+
+  .benefit-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.12);
+  }
+
+  .benefit-icon {
+    color: #333;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+  }
+
+  .benefit-icon svg {
+    width: 50px;
+    height: 50px;
+    stroke-width: 1.5;
+  }
+
+  .benefit-title {
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: #222;
+    margin-bottom: 15px;
+    font-family: 'Shippori Mincho', serif;
+  }
+
+  .benefit-description {
+    font-size: 0.95rem;
+    color: #666;
+    line-height: 1.6;
+    margin: 0;
+  }
+  
+  .produk-title {
+    font-size: 2rem;
+  }
+  
+  .produk-subtitle {
+    font-size: 0.95rem;
+  }
+  
+  .section-title {
+    font-size: 1.8rem;
+  }
+  
+  .benefit-card {
+    padding: 25px;
+  }
+  
+  .benefit-title {
+    font-size: 1.1rem;
+  }
+}

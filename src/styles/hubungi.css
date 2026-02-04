@@ -1,0 +1,59 @@
+/* Monochrome contact (HubungiKami) styles */
+.hubungi-section {
+    background: #f8f8f8;
+    color: #222;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.hubungi-title {
+  font-family: 'Shippori Mincho', serif;
+  font-size: 2rem;
+  font-weight: 700;
+  text-align: center;
+  color: #111;
+}
+
+.hubungi-desc {
+  color: #555;
+  max-width: 680px;
+    margin: 12px auto 30px auto;
+}
+
+.hubungi-card {
+text-align: center;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.06);
+}
+
+.btn-dark {
+
+  background: #222;
+  border-color: #222;
+}
+
+.btn-dark:hover {
+  background: #111;
+  border-color: #111;
+}
+
+.btn-outline-dark {
+  color: #222;
+  border-color: #222;
+}
+
+.btn-outline-dark:hover {
+  background: #222;
+  color: #fff;
+}
+
+.note {
+  color: #666;
+  font-size: 0.95rem;
+}
+
+@media (max-width: 768px) {
+  .hubungi-section { padding: 40px 12px; }
+  .hubungi-title { font-size: 1.6rem; }
+}

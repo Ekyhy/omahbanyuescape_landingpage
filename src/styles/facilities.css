@@ -1,0 +1,80 @@
+/* Monochrome facilities styles */
+.facilities-section {
+  background: #ffffff;
+  padding: 60px 20px;
+}
+
+.facilities-title {
+  font-family: 'Shippori Mincho', serif;
+  font-size: 2rem;
+  color: #222;
+}
+
+.facilities-subtitle {
+  color: #666;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.facility-card {
+  border-radius: 12px;
+  overflow: hidden;
+  background: #fafafa;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.06);
+  transition: transform 240ms ease, box-shadow 240ms ease;
+}
+
+.facility-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 18px 40px rgba(0,0,0,0.12);
+}
+
+.facility-image-wrap {
+  position: relative;
+  width: 100%;
+  height: 220px;
+  overflow: hidden;
+}
+
+.facility-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: grayscale(100%) contrast(95%) brightness(95%);
+  transition: transform 400ms ease, filter 400ms ease;
+}
+
+.facility-card:hover .facility-image {
+  transform: scale(1.04);
+  filter: grayscale(40%) contrast(100%) brightness(100%);
+}
+
+.facility-overlay {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding: 18px 16px;
+  background: linear-gradient(180deg, rgba(0,0,0,0) 0%, rgba(0,0,0,0.45) 100%);
+  color: #fff;
+}
+
+.facility-title {
+  margin: 0 0 6px 0;
+  font-size: 1.1rem;
+  font-weight: 700;
+}
+
+.facility-desc {
+  margin: 0;
+  font-size: 0.9rem;
+  opacity: 0.95;
+}
+
+@media (max-width: 768px) {
+  .facility-image-wrap { height: 180px; }
+}
+
+@media (max-width: 480px) {
+  .facility-image-wrap { height: 150px; }
+}
